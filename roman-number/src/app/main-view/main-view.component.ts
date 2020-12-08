@@ -1,13 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-main-view',
   templateUrl: './main-view.component.html',
   styleUrls: ['./main-view.component.scss']
 })
-export class MainViewComponent implements OnInit {
+export class MainViewComponent {
 
   constructor() { }
+
   num: number;
   letter: string;
   val: any;
@@ -17,9 +18,6 @@ export class MainViewComponent implements OnInit {
   arabicNumber: number;
   values = [1, 5, 10, 50, 100, 500, 1000];
   letters = ['I', 'V', 'X', 'L', 'C', 'D', 'M'];
-
-  ngOnInit() {
-  }
 
   toRoman = () => {
     const roman = [];
@@ -43,6 +41,6 @@ export class MainViewComponent implements OnInit {
         roman.push('');
       }
     }
-    this.response = roman.join('');
+    this.response = roman.join('') !== '' ? roman.join('') : 'El cero no existe en romano';
   }
 }
