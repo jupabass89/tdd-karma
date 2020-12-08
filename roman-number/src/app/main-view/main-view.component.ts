@@ -10,13 +10,13 @@ import { FormsModule } from '@angular/forms';
 export class MainViewComponent implements OnInit {
 
   constructor() { }
-  num;
-  letter;
-  val;
-  index;
-  response;
-  insert;
-  arabicNumber;
+  num: number;
+  letter: string;
+  val: any;
+  index: number;
+  response: string;
+  insert: any;
+  arabicNumber: number;
   values = [1, 5, 10, 50, 100, 500, 1000];
   letters = ['I', 'V', 'X', 'L', 'C', 'D', 'M'];
 
