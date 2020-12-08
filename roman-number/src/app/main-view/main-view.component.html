@@ -1,0 +1,7 @@
+<article>
+  <h1>Numeros Romanos</h1>
+  <label>Ingrese un número arábico: </label>
+  <input type="number" name="input_roman" id="arabic_number" [(ngModel)]="arabicNumber">
+  <button style="margin-left: 10px;" (click)=toRoman()>Convertir a romano</button>
+  <p>Representación en Romano: <span id="roman_number">{{response}}</span></p>
+</article>
